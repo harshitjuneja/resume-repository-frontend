@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-var PrettierPlugin = require("prettier-webpack-plugin");
+const PrettierPlugin = require("prettier-webpack-plugin");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
