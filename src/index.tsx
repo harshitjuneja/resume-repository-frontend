@@ -1,7 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-dom";
+import { createStore } from "redux";
+import rootReducer from "./app/common/duck/reducers";
 
-const title = "Testing HMR";
-ReactDOM.render(<div>{title}</div>, document.getElementById("root"));
+const store = createStore(rootReducer);
+render(<div>{}</div>, document.getElementById("root"));
 
 module.hot.accept();
