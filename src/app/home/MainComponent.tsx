@@ -1,7 +1,7 @@
 import { render } from "react-dom";
 
 const MainComponent = () => {
-  return render(<div />);
+  return render();
 };
 
 export default MainComponent;

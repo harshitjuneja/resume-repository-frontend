@@ -1,5 +1,4 @@
 const HeaderComponent = () => {
-  
   return;
 };
 
