@@ -3,6 +3,7 @@ const PrettierPlugin = require("prettier-webpack-plugin");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
+    watch: true,
     entry: ['@babel/polyfill', './src/index.tsx'],
     output: {
         path: __dirname + '/dist',

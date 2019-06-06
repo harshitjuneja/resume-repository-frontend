@@ -1,18 +1,20 @@
 import React from "react";
 import { render } from "react-dom";
-import { applyMiddleware, createStore } from "redux";
-import rootReducer from "./app/common/duck/reducers";
+import Footer from "./app/home/FooterComponent";
+import HeaderBar from "./app/home/HeaderComponent";
+import UploadResume from "./app/prospect/uploadResume";
 
-import HeaderComponent from "./app/home/HeaderComponent";
-import FooterComponent from "./app/home/FooterComponent";
+/* import { applyMiddleware, createStore } from "redux";
+import rootReducer from "./app/common/duck/reducers"; */
 
-const store = createStore(rootReducer, ["some_state"], applyMiddleware());
+// const store = createStore(rootReducer, ["some_state"], applyMiddleware());
 
-render(
-  <div>
-    <HeaderComponent className="header" />
-    <FooterComponent className="footer" />
-  </div>,
+render( 
+  <>
+    <HeaderBar />
+    <UploadResume />
+    <Footer />
+  </>,
   document.getElementById("root")
 );
 

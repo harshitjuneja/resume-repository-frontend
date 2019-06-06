@@ -1,15 +1,18 @@
 {
     "compilerOptions": {
         "baseUrl": ".",
-        "paths": { "*": ["types/*"] },
+        "paths": {
+            "*": [
+                "types/*"
+            ]
+        },
         "outDir": "./dist/",
         "sourceMap": true,
         "noImplicitAny": true,
-        "moduleResolution": "node",
         "target": "es5",
         "esModuleInterop": true,
-        "jsx": "react"
-        
+        "jsx": "react",
+        "skipLibCheck": true
     },
     "include": [
         "./src/**/*"
