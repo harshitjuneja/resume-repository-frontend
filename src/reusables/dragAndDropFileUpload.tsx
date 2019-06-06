@@ -18,18 +18,27 @@ isFileinDropbox
 import React from "react";
 import { Box, Button, Flex, Heading, Text } from "rebass";
 
-export default class DragAndDrop extends React.Component {
+export default class DragAndDropFileUpload extends React.Component {
+
+  public dropRef = React.createRef();
+
   public constructor(props: any) {
     super(props);
   }
 
-  /*  public componentDidMount() {
-  
-      }
-  
-      public componentWillMount() {
-  
-      } */
+  public componentDidMount() {
+    let div = this.dropRef.current;
+    
+    div.addeventListener('dragEnter', handleDragEnter);
+    div.addeventListener('dragLeave', handleDragEnter);
+    div.addeventListener('dragEnter', handleDragEnter);
+    div.addeventListener('dragEnter', handleDragEnter);
+
+  }
+
+  public componentWillMount() {
+
+  }
 
   public render() {
     return (
